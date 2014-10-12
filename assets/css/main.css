@@ -88,6 +88,7 @@ gmtlightmain {
 
 #headerwrap {
 	/*background-color: #34495e;*/
+    /*background-color: #2f2f2f;*/
     background-color: #2f2f2f;
 	padding-top: 60px;
 }
@@ -173,3 +174,10 @@ gmtlightmain {
 #c p {
 	color: white
 }
+
+/*
+.navbar-default {
+background-color: #222222;
+border-color: #222222;
+}
+*/
