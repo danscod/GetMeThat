@@ -31,6 +31,7 @@
     
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,6 +57,12 @@
 	          </button>
 	          <a class="navbar-brand active" href="index.html"><b><gmtdark>Get</gmtdark><gmtlight>Me</gmtlight><gmtdark>That</gmtdark></b></a>
 	        </div>
+	              <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default"><b><gmtdark>Get</gmtdark><gmtlight>Me</gmtlight><gmtdark>That</gmtdark></b></button>
+      </form>
 	        <div class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -88,7 +95,7 @@
 	<div id="headerwrap">
 	    <div class="container">
 	    	<div class="row centered">
-	    		<div class="col-lg-12">
+	    		<div class="col-lg-10">
 					<h1>Welcome To <b><gmtdarkmain>Get</gmtdarkmain><gmtlightmain>Me</gmtlightmain><gmtdarkmain>That</gmtdarkmain></b></h1>
 					<!--
 					<img class="img-responsive" src="assets/img/GetMeThat.png" alt="">
@@ -113,24 +120,75 @@
                 </h1>
             </div>
             <div class="col-md-6">
-                <div class="panel panel-default">
+				<div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.2.0</h4>
+                        <h3 class="panel-title">Sign In</h3>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                        <form role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                                    </label>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <a href="javascript:;" class="btn btn-sm btn-success">Login</a>
+                                <a href="javascript:;" class="btn btn-sm btn-success">Create a New Account</a>
+                            </fieldset>
+                        </form>
                     </div>
-                </div>
+				</div>
             </div>
             <div class="col-md-6">
-                <div class="panel panel-default">
+<div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
+                        <h3 class="panel-title">Make a listing</h3>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                        <form role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                	<label for="concept" class="col-sm-3 control-label">Product</label>
+                                	<div class="col-sm-9">
+                                    <input class="form-control" placeholder="e.g Nepalese Hemp Rug" name="email" type="email" autofocus="">
+                                    <br>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                	<label for="concept" class="col-sm-3 control-label">Brief Description</label>
+                                	<div class="col-sm-9">
+                                    <input class="form-control" placeholder="e.g. A traditional hemp rug made in the mountain villages of Nepal" name="email" type="email" autofocus="">
+                                    <br>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                	<label for="concept" class="col-sm-3 control-label">Price Range</label>
+	                                	<div class="col-sm-4">
+	                                    <input class="form-control" placeholder="From" name="email" type="email" autofocus="">
+	                                </div>
+                                	<div class="col-sm-4">
+	                                    <input class="form-control" placeholder="To" name="email" type="email" autofocus="">
+	                                    <br>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                	<label for="concept" class="col-sm-3 control-label">Image</label>
+                                	<div class="col-sm-7">
+                                    <input class="form-control" placeholder="Select File Location" name="email" type="email" autofocus="">
+                                    <br>
+                                    </div>    
+                                    <a href="javascript:;" class="btn btn-sm btn-success">Upload</b></a>
+								</div>                            <!-- Change this to a button or input when using this as a form -->
+                                <a href="javascript:;" class="btn btn-lg btn-success"><gmtdarkmain>Get</gmtdarkmain><gmtlightmain>Me</gmtlightmain><gmtdarkmain>That</gmtdarkmain></b></a>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -145,39 +203,34 @@
                     Get What You Want
                 </h1>
             </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.2.0</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="/assets/img/simon/profile.jpg" alt="">
+                </a>
+                <h3>
+                    Make a Profile
+                </h3>
             </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="/assets/img/simon/speech.jpg" alt="">
+                </a>
+                <h3>
+                    Post what you want
+                </h3>
             </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="/assets/img/simon/coffee.jpg" alt="">
+                </a>
+                <h3>
+                    Choose a Seller
+                </h3>
             </div>
+        </div>
         </div>
         <!-- /.row -->
         <hr>
@@ -189,39 +242,34 @@
                     Make Easy Money
                 </h1>
             </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.2.0</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="/assets/img/simon/profile.jpg" alt="">
+                </a>
+                <h3>
+                    Make a Profile
+                </h3>
             </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="/assets/img/simon/listing.jpg" alt="">
+                </a>
+                <h3>
+                    Place offers on listings
+                </h3>
             </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="/assets/img/simon/trade.jpg" alt="">
+                </a>
+                <h3>
+                   Ship through our partners
+                </h3>
             </div>
+        </div>
         </div>
         <!-- /.row -->
     </div>
